@@ -1,17 +1,13 @@
-N = int(input("Ввод: "))
+number = int(input("Введите число N: "))
 
-count2 = 0
-count3 = 0
-count23 = 0
+chet_count = 0
+nechet_count = 0
 
-for i in range(1, N + 1):
-    if i %2==0:
-        count2+=1
-    if i%3 == 0:
-        count3+=1
-    
-    if i %2==0 and i %3==0:
-        count23+=1
+for i in range(1, number + 1):
+    if i%2==0:
+        chet_count+=1
+    else:
+        nechet_count+=1
 
-print(count2,count3,count23)
-    
+print("Кол-во четных чисел: ", chet_count)
+print("Кол-во нечетных чисел: ", nechet_count)
